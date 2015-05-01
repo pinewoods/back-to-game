@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">educare</string>
-
-    <string name="hello_world">He\'s fucking alive, Vido!</string>
+    <string name="hello_world">Educare</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_content">Conteúdo</string>
+    <string name="title_activity_content">Content</string>
+    <string name="title_activity_classroom">Classroom</string>
+    <string name="title_activity_journal">Journal</string>
 </resources>

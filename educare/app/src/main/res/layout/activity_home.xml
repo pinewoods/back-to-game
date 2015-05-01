@@ -19,21 +19,23 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Conteúdo"
+            android:text="Content"
             android:layout_gravity="center_horizontal"
             android:onClick="openContent"
-            android:id="@+id/conteudo" />
+            android:id="@+id/content" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sala"
-            android:id="@+id/sala"
+            android:text="Classroom"
+            android:id="@+id/classroom"
+            android:onClick="openClassroom"
             android:layout_gravity="center_horizontal" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Diário"
-            android:id="@+id/diario"
+            android:text="Journal"
+            android:onClick="openJournal"
+            android:id="@+id/journal"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
