@@ -1,2 +1,6 @@
+# Vim files
+*.swp
+
 ##Removing OSx Hidden files
 **/.DS_Store
+
