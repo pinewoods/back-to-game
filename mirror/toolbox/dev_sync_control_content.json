@@ -1,0 +1,44 @@
+[
+{
+    "fields": {
+        "dummy": "Math Class"
+    },
+    "model": "sync_control.genericcontent",
+    "pk": 1
+},
+{
+    "fields": {
+        "dummy": "Economics Class"
+    },
+    "model": "sync_control.genericcontent",
+    "pk": 2
+},
+{
+    "fields": {
+        "dummy": "CS Class"
+    },
+    "model": "sync_control.genericcontent",
+    "pk": 3
+},
+{
+    "fields": {
+        "dummy": "History Class"
+    },
+    "model": "sync_control.genericcontent",
+    "pk": 4
+},
+{
+    "fields": {
+        "dummy": "Biology Class"
+    },
+    "model": "sync_control.genericcontent",
+    "pk": 5
+},
+{
+    "fields": {
+        "dummy": "Sex Education Class"
+    },
+    "model": "sync_control.genericcontent",
+    "pk": 6
+}
+]
