@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from sync_control.models import SyncedContent
-from sync_control.models import SyncedContentSerializer
+from sync_control.models import UserProfile
+from sync_control.models import UserProfileSerializer
 
-class SyncedContentView(viewsets.ModelViewSet):
-    queryset = SyncedContent.objects.all()
-    serializer_class = SyncedContentSerializer
+
+class UserProfileView(viewsets.ModelViewSet):
+    queryset = UserProfile.objects.all()
+    serializer_class = UserProfileSerializer

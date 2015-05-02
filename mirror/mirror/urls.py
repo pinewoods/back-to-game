@@ -7,7 +7,7 @@ from rest_framework import routers
 from sync_control import views
 
 router = routers.DefaultRouter()
-router.register(r'synced_content', views.SyncedContentView)
+router.register(r'user_profile', views.UserProfileView)
 
 urlpatterns = [
 

@@ -106,5 +106,45 @@
         "last_login": null,
         "email": ""
     }
+},
+{
+    "model": "sync_control.userprofile",
+    "fields": {
+        "user": 5,
+        "role": "SD"
+    },
+    "pk": 1
+},
+{
+    "model": "sync_control.userprofile",
+    "fields": {
+        "user": 6,
+        "role": "SD"
+    },
+    "pk": 2
+},
+{
+    "model": "sync_control.userprofile",
+    "fields": {
+        "user": 7,
+        "role": "SD"
+    },
+    "pk": 3
+},
+{
+    "model": "sync_control.userprofile",
+    "fields": {
+        "user": 3,
+        "role": "TC"
+    },
+    "pk": 4
+},
+{
+    "model": "sync_control.userprofile",
+    "fields": {
+        "user": 4,
+        "role": "TC"
+    },
+    "pk": 5
 }
 ]

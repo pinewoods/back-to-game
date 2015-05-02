@@ -25,6 +25,14 @@ class UserProfile(models.Model):
     def __str__(self):
         return '<%s>' % (self.user.username,)
 
+class UserProfileSerializer(serializers.Serializer):
+    user = serializers.StringRelatedField()
+    contents = serializers.PrimaryKeyRelatedField(
+            many=True, read_only=True)
+    class Meta:
+        model = UserProfile
+        fields = ('user', 'role', 'contents')
+
 
 class SyncedContent(models.Model):
     user = models.ForeignKey(UserProfile)
@@ -36,8 +44,3 @@ class SyncedContent(models.Model):
     def __str__(self):
         return '<%s - %s>' % (self.user.user.username, self.content.dummy)
 
-
-class SyncedContentSerializer(serializers.Serializer):
-    user = serializers.IntegerField()
-    content = serializers.IntegerField()
-    is_synced = serializers.BooleanField()
