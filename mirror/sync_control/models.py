@@ -5,10 +5,16 @@ from rest_framework import serializers
 
 
 class GenericContent(models.Model):
-    dummy = models.CharField(max_length=128)
+    title = models.CharField(max_length=128)
+    url = models.URLField(blank=True)
 
     def __str__(self):
         return '<%s>' % (self.dummy,)
+
+
+class GenericContentSerializer(serializers.Serializer):
+    title = serializers.StringRelatedField()
+    url = serializers.StringRelatedField()
 
 
 class UserProfile(models.Model):
@@ -24,6 +30,7 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return '<%s>' % (self.user.username,)
+
 
 class UserProfileSerializer(serializers.Serializer):
     user = serializers.StringRelatedField()
